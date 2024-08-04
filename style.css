@@ -41,13 +41,41 @@ nav ul li a:hover{
     align-items: center;
 }
 .Products{
+    width: 90vw;
+    padding-top: 20px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    width: 200%;
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    
+    gap: 20px;
+}
+.product{
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .product img{
-    height: 70vh;
-    width: 90%;
+    height: 500px;
+    width: 100%;
     object-fit: cover;
+}
+.product-info{
+    width: 100%;
+}
+.product-info h4,p{
+    margin: 10px 0 0 10px;
+}
+.price{
+    color: red;
+}
+.button{
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(214, 200, 43);
+    color: #fff;
+}
+.button:hover{
+    background-color: rgb(173, 160, 12);
 }
